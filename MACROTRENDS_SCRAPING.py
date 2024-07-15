@@ -29,7 +29,8 @@ z = list(map(str,tickers.split(',')))
 options = webdriver.ChromeOptions()
 #options.headless = True
 options.add_argument("start-maximized")
-driver = uc.Chrome(options=options)
+# driver = uc.Chrome(options=options)
+driver = webdriver.Chrome(options)
 
 #getting correct urls for each ticker
 for i in z:
